@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-color: rgba(48, 161, 163, 0.87);
+        } 
+        .cloud{
+            position: absolute;
+            top: 30px;
+            animation-name: cloud ;
+            animation-duration: 6s;
+            animation-delay: 1.05s;
+            animation-direction: reverse;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+        }
+        .cloud1{
+            position: absolute;
+            left: 300px;
+            top: 45px;
+            animation-name: cloud1 ;
+            animation-duration: 6s;
+            animation-delay: 1.05s;
+            animation-direction: reverse;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+        }
+        .truck{
+            position: relative;
+            top:300px;
+            animation-name: truck ;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .road{
+            position: absolute;
+            top: 400px;
+        
+        }
+        @keyframes truck{
+            from {transform: translateX(-700px)}
+            to{transform: translateX(1400px);}
+        }
+        @keyframes cloud {
+            from {transform: translateX(-700px);}
+            to{transform: translateX(1400px);}
+            
+        }
+        @keyframes cloud1 {
+            from {transform: translateX(-700px);}
+            to{transform: translateX(1400px);}
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="cloud.png" alt="cloud" width="220px" height="100px" class="cloud">
+    <img src="cloud.png" alt="cloud1" width="200px" height="80px" class="cloud1">
+    <img src="12532.png" height="300px" width="1500px" class="road">
+     <img src="pngegg (3).png" width="300px" class="truck">
+    
+</body>
+</html>
